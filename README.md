@@ -1,0 +1,2 @@
+# herewegGO
+Learning Go!
