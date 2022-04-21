@@ -9,4 +9,4 @@ require (
 	rsc.io/sampler v1.3.0 // indirect
 )
 
-replace github.com/christoph-codes/herewegGO/greeting => ./greeting
+replace github.com/christoph-codes/herewegGO/tree/main/greeting => ./greeting
