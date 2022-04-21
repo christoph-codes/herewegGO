@@ -1,9 +1,18 @@
 package greeting
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"log"
+)
 
-func Hello(name string) string {
-	fmt.Println("Hi")
+func Hello(name string) (string, error) {
+	log.SetPrefix("helloError: ")
+	if name == "" {
+		log.Fatal(errors.New("you forgot a name in the hello function"))
+		return "", nil
+	}
+
 	message := fmt.Sprintf("Hi, %v. Welcome!", name)
-	return message
+	return message, nil
 }
