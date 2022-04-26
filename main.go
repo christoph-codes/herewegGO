@@ -2,6 +2,7 @@ package main
 
 import (
 	"app/greeting"
+	"app/random"
 	"fmt"
 	"log"
 
@@ -18,6 +19,8 @@ func main() {
 	// Print from the bye function
 	fmt.Println(greeting.Bye("Coder"))
 	// Print from the hello function to kill the entire application after this
-	fmt.Println(greeting.Hello(""))
+	fmt.Println(greeting.Hello("Tyler the Creator"))
 	fmt.Println(greeting.Bye("Yo"))
+
+	fmt.Println(random.RandomFormat("Christoph Codes"))
 }
