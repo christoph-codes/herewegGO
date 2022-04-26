@@ -23,10 +23,10 @@ func RandomFormat(name string) (string, error) {
 		"Hail, %v! Well met!",
 	}
 
+	// Return a randomly selected message format by specifying
+	// a random index for the slice of formats.
 	message := fmt.Sprintf(formats[rand.Intn(len(formats))], name)
 
 	return message, nil
-	// Return a randomly selected message format by specifying
-	// a random index for the slice of formats.
 	// return formats[rand.Intn(len(formats))]
 }
